@@ -1,0 +1,19 @@
+html {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 10px;
+    background: darkorchid;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+

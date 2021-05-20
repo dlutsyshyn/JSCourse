@@ -9,11 +9,28 @@ const personalMovieDB = {
 };  //
 
 
-for (let i = 0; i < 2; i++) {
+/* for (let i = 0; i < 2; i++) {
     const movieName = prompt ('Один из просмотреных фильмов?', ''),
           movieMark = prompt ('Какую оценку вы поставите фильму?', '');
 
         if (movieMark != null && movieName != null && movieName != '' && movieMark != '' && movieName.length < 50) {
+            personalMovieDB.movies [movieName] = movieMark;
+            console.log('Done!');
+        } else {
+            console.log('Error!')
+            i--;
+        }
+} */
+
+let i = 0;
+while (i < 2) {
+
+    const movieName = prompt ('Один из просмотреных фильмов?', ''),
+          movieMark = prompt ('Какую оценку вы поставите фильму?', '');
+
+          i++;
+        
+          if (movieMark != null && movieName != null && movieName != '' && movieMark != '' && movieName.length < 50) {
             personalMovieDB.movies [movieName] = movieMark;
             console.log('Done!');
         } else {

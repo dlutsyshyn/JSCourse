@@ -25,6 +25,10 @@ console.log(calc(10, 40)); */
 }
 */
 
-const calc = (a, b) => a + b;
+var a = 10;
+b = 2;
 
-console.log(calc());
+a *= 10;
+b += 25;
+
+alert(`Первая переменная: ${a} \n Вторая переменная ${b}`)

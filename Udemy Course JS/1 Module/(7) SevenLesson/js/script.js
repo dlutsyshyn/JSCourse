@@ -1,3 +1,5 @@
+"use strict"
+
 let numberOfFilms; //переменная от пользователя
 
 const personalMovieDB = {
@@ -17,19 +19,7 @@ function start () {
     }
 }
 
-start ()
-/* for (let i = 0; i < 2; i++) {
-    const movieName = prompt ('Один из просмотреных фильмов?', ''),
-          movieMark = prompt ('Какую оценку вы поставите фильму?', '');
-
-        if (movieMark != null && movieName != null && movieName != '' && movieMark != '' && movieName.length < 50) {
-            personalMovieDB.movies [movieName] = movieMark;
-            console.log('Done!');
-        } else {
-            console.log('Error!')
-            i--;
-        }
-} */
+start ();
 
 let i = 0;
 while (i < 2) {
@@ -50,12 +40,12 @@ while (i < 2) {
 
 if (personalMovieDB.count < 10) {
     console.log('You watched a small amnount of movies!')
-} else if (personalMovieDB.count < 30) {
+} else if (personalMovieDB.count >=10 && personalMovieDB.count) {
     console.log('Normas! Kinoman!')
-} else if (personalMovieDB.count > 50) {
+} else if (numberOfFilms >= 30) {
     console.log('Nu ty i gonish!')
 } else {
-    console.log('Kapez, ty tupoi!')
+    console.log('Kapez!')
 }
 
 console.log(personalMovieDB);
